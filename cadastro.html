@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/header.css">
+    <link rel="stylesheet" href="assets/cadastro.css">
+
+</head>
+<body>
+    <div class="principal">
+        <header id="pageHeader">
+            <div id="principal">
+                <!-- Bagunça -->
+                <a href="/" id="menuLink" >
+                    <img src="./icons" alt="Menu">
+                </a>
+    
+                <a href="\">
+                    <img src="./assets/imagens/logo_branco.png" alt="Logo">
+                </a>
+    
+                <a href="/" id="cartLink">
+                    <img src="./icons/shopping-cart.svg" alt="Carrinho">
+                </a>
+            </div>
+    
+            <nav id="headerNavBar">
+                <a href="/">
+                    <img src="./icons/dollar-sign.svg" alt="Prmoções">
+                    Promoções
+                </a>
+                <div class="verticalLine" ></div>
+                <a href="/">
+                    <img src="./icons/user.svg" alt="">
+                    Área do Cliente
+                </a>
+                <div class="verticalLine" ></div>
+                <a href="/">
+                    <img src="./icons/phone.svg" alt="">
+                    Contatos
+                </a>
+                <div class="verticalLine" ></div>
+                <a href="/">
+                    <img src="./icons/file-text.svg" alt="">
+                    Sobre Nós
+                </a>
+                <div class="verticalLine" ></div>
+                <a href="/">
+                    <img src="./icons/user-plus.svg" alt="">
+                    Cadastre-se aqui
+                </a>
+                <!-- Área do Cliente, Contatos, Sobre Nós, Cadastre-se aqui / sair  -->
+            </nav>
+        </header>
+    </div>
+    <div class="col">
+        <div class="formTop">
+            <div class="expandir">
+                <h1> Dados da conta</h1>
+                <img src="icons/sinal-de-seta-para-baixo-para-navegar.svg" alt="">
+            </div>
+        </div>
+        <form action="post">
+            <div class="formDeFault">
+                <label class="labelDefault">
+                    <span class="nomes">Nome:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">Email:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">CPF:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">TEL:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">Senha:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes novaSenha">Nova senha:</span>
+                    <input type="text" class="inputDefault novaSenha">
+                </label>
+                <label class="labelDefault btn">
+                    <button class="buttonDefault">Salvar Alterações</button>
+                </label>
+                
+            </div>
+        </form>
+    </div>
+    <script src="assets/cadastro.js"></script>
+</body>
+</html>

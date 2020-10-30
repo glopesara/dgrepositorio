@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+
+.col{
+    width: 60%;
+    margin: auto;
+    background: #eeeeee;
+    height: auto;
+    transition: height 1s;
+    overflow: hidden;
+    border: 2px solid #c7c0c0;
+
+}
+.col.open{
+    transition: height 1s;
+    width: 60%;
+    margin: auto;
+    background: #eeeeee;
+    height: 200px;
+}
+.expandir{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+}
+.expandir h1{
+    display: inline;
+}
+.formTop{
+    background-color: #ddd;
+    margin: 0 0 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #c7c0c0;
+}
+.formTop img{
+    cursor: pointer;
+    height: 15px;
+}
+.formDeFault{
+    width: 80%;
+    margin: auto;
+}
+.labelDefault{
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+}
+.labelDefault.btn{
+    width: 80%;
+    margin: auto;
+}
+.nomes{
+    width: 13%;
+    font-size: 20px;
+    float: left;
+}
+.nomes.novaSenha{
+    width: 20%;
+}
+.inputDefault{
+    margin-left: 27px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #ddd;
+    height: 30px;
+}
+.inputDefault.novaSenha{
+    width: 73%;
+}
+
+.buttonDefault{
+        height: 40px;
+    width: 100%;
+    background: red;
+    color: white;
+    font-size: 20px;
+}
