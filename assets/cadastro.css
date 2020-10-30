@@ -12,16 +12,26 @@ body{
     border: 2px solid #c7c0c0;
 
 }
-.col.open{
+.col.close{
     transition: height 1s;
     width: 60%;
     margin: auto;
     background: #eeeeee;
     height: 200px;
 }
+.col.close .imgUp{
+    display: none;
+}
+.col .imgDow{
+    display: none;
+}
+
+.col.close .imgDow{
+    cursor: pointer;
+    display: inline-block;
+}
 .expandir{
     display: inline-block;
-    cursor: pointer;
     font-size: 12px;
 }
 .expandir h1{
@@ -72,7 +82,7 @@ body{
 .buttonDefault{
         height: 40px;
     width: 100%;
-    background: red;
+    background: rgba(255, 0, 0, 0.918);
     color: white;
     font-size: 20px;
 }

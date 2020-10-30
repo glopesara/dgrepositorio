@@ -1,3 +1,8 @@
-document.querySelector(".expandir").addEventListener('click',e=>{
-    document.querySelector(".col").classList.add("open");
+document.querySelector(".imgUp").addEventListener('click',e=>{
+    document.querySelector(".col").classList.add("close");
+});
+
+document.querySelector(".imgDow").addEventListener('click',e=>{
+    document.querySelector(".col").classList.remove("close");
+
 });
