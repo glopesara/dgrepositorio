@@ -4,7 +4,7 @@ body{
 
 .col{
     width: 60%;
-    margin: auto;
+    margin: 10px auto;
     background: #eeeeee;
     height: auto;
     transition: height 1s;
@@ -17,7 +17,7 @@ body{
     width: 60%;
     margin: auto;
     background: #eeeeee;
-    height: 200px;
+    border-bottom: none;
 }
 .col.close .imgUp{
     display: none;
@@ -39,7 +39,6 @@ body{
 }
 .formTop{
     background-color: #ddd;
-    margin: 0 0 10px 0;
     text-align: center;
     border-bottom: 2px solid #c7c0c0;
 }
@@ -80,9 +79,16 @@ body{
 }
 
 .buttonDefault{
-        height: 40px;
+    height: 40px;
     width: 100%;
     background: rgba(255, 0, 0, 0.918);
     color: white;
     font-size: 20px;
+    margin-bottom: 10px;
+}
+.dadosOff{
+    display: none;
+}
+.enderecoOff{
+    display: none;
 }

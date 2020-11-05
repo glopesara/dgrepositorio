@@ -53,16 +53,56 @@
             </nav>
         </header>
     </div>
-    <div class="col">
+    <div class="col" id="dadosCol">
         <div class="formTop">
             <div class="expandir">
                 <h1> Dados da conta</h1>
-                <img class="imgDow" src="icons/sinal-de-seta-para-baixo-para-navegar.svg" alt="">
-                <img class="imgUp" src="icons/seta-para-cima.svg" alt="">
+                <img class="imgDow" id="dadosOn" src="icons/sinal-de-seta-para-baixo-para-navegar.svg" alt="">
+                <img class="imgUp" id="dadosOff"  src="icons/seta-para-cima.svg" alt="">
             </div>
         </div>
         <form action="post">
-            <div class="formDeFault">
+            <div class="formDeFault" id="fomDados">
+                <label class="labelDefault">
+                    <span class="nomes">Nome:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">Email:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">CPF:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">TEL:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes">Senha:</span>
+                    <input type="text" class="inputDefault">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes novaSenha">Nova senha:</span>
+                    <input type="text" class="inputDefault novaSenha">
+                </label>
+                <label class="labelDefault btn">
+                    <button class="buttonDefault">Salvar Alterações</button>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col" id="ederecoCol">
+        <div class="formTop">
+            <div class="expandir">
+                <h1>Endereço</h1>
+                <img class="imgDow" id="enderecoOn" src="icons/sinal-de-seta-para-baixo-para-navegar.svg" alt="">
+                <img class="imgUp" id="enderecoOff"  src="icons/seta-para-cima.svg" alt="">
+            </div>
+        </div>
+        <form action="post">
+            <div class="formDeFault" id="formEndereco">
                 <label class="labelDefault">
                     <span class="nomes">Nome:</span>
                     <input type="text" class="inputDefault">
