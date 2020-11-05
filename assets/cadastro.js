@@ -17,4 +17,3 @@ document.getElementById('enderecoOn').addEventListener('click',e=>{
     document.getElementById("ederecoCol").classList.remove("close"); 
     document.getElementById('formEndereco').classList.remove('enderecoOff');
 });
-

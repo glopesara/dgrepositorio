@@ -53,16 +53,28 @@ body{
 .labelDefault{
     margin: 10px 0;
     width: 100%;
-    display: block;
+    display: inline-block;
 }
-.labelDefault.btn{
-    width: 80%;
-    margin: auto;
+.labelDefault.rua{
+    width: 89%;
+}
+.labelDefault.numero{
+    width: 10%;
+}
+.labelDefault.uf{
+    width: 30%;
+}
+.labelDefault.complemento{
+    width: 69%;
 }
 .nomes{
     width: 13%;
     font-size: 20px;
     float: left;
+}
+.nomes.display{
+    float: none;
+    display: block;
 }
 .nomes.novaSenha{
     width: 20%;
@@ -77,7 +89,21 @@ body{
 .inputDefault.novaSenha{
     width: 73%;
 }
-
+.inputDefault.cep{
+    width: 50%;
+}
+.inputDefault.uf{
+    width: 50%;
+}
+.inputDefault.complemento{
+    width: 100%;
+}
+.margin{
+    margin: 0;
+}
+.total{
+    width: 100%;
+}
 .buttonDefault{
     height: 40px;
     width: 100%;
@@ -85,6 +111,12 @@ body{
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
+}
+.btnCep{
+    text-align: center;
+    display: inline-block;
+    width: 29%;
+    cursor: pointer;
 }
 .dadosOff{
     display: none;
