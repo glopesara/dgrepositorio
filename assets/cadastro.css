@@ -3,18 +3,18 @@ body{
 }
 
 .col{
-    width: 60%;
+    width: 50%;
     margin: 10px auto;
     background: #eeeeee;
     height: auto;
-    transition: height 1s;
+    transition: all 1s;
     overflow: hidden;
     border: 2px solid #c7c0c0;
 
 }
 .col.close{
-    transition: height 1s;
-    width: 60%;
+    transition: all 1s;
+    width: 50%;
     margin: auto;
     background: #eeeeee;
     border-bottom: none;
@@ -48,7 +48,7 @@ body{
 }
 .formDeFault{
     width: 80%;
-    margin: auto;
+    margin: 10px auto;
 }
 .labelDefault{
     margin: 10px 0;
@@ -86,6 +86,10 @@ body{
     background-color: #ddd;
     height: 30px;
 }
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
 .inputDefault.novaSenha{
     width: 73%;
 }
@@ -113,7 +117,7 @@ body{
     margin-bottom: 10px;
 }
 .btnCep{
-    text-align: center;
+    text-align: end;
     display: inline-block;
     width: 29%;
     cursor: pointer;
@@ -123,4 +127,63 @@ body{
 }
 .enderecoOff{
     display: none;
+}
+.pedidosOff{
+    display: none;
+}
+.pedidos{
+    display: flex;
+    margin: 10px 0;
+}
+.numeroPedido{
+    display: flex;
+    align-items: center;
+    background-color:blue;
+    width: 35%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.numeroPedido img{
+    width: 30%;
+    height: 20px;
+}
+.numeroPedido span{
+    width: 70%;
+    font-weight: bolder;
+    color: white;
+}
+.dataPedido{
+    display: flex;
+    align-items: center;
+    background-color:#969696;
+    width: 30%;
+    height: 30px;
+}
+.dataPedido span{
+    font-weight: bolder;
+    color: white;
+    margin: auto;
+}
+.statusPedidoDefault{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.statusPedidoDefault span{
+    font-weight: bolder;
+    color: white;
+    margin: auto;
+}
+.statusPedidoDefault.concluido{
+    background-color: #07ea0ebf;
+}
+.statusPedidoDefault.processando{
+    background-color: #ffa500c4;
+}
+.statusPedidoDefault.cancelado{
+    background-color: #ff0000bd;
 }

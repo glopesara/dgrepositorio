@@ -17,3 +17,13 @@ document.getElementById('enderecoOn').addEventListener('click',e=>{
     document.getElementById("ederecoCol").classList.remove("close"); 
     document.getElementById('formEndereco').classList.remove('enderecoOff');
 });
+
+document.getElementById('pedidoOff').addEventListener('click',e=>{
+    document.getElementById("pedidosCol").classList.add("close");
+    document.getElementById('formPedidos').classList.add('pedidosOff');
+});
+
+document.getElementById('pedidoOn').addEventListener('click',e=>{
+    document.getElementById("pedidosCol").classList.remove("close"); 
+    document.getElementById('formPedidos').classList.remove('pedidosOff');
+});
