@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <script src="assets/cadastro.js"></script>
     <div class="principal">
         <header id="pageHeader">
             <div id="principal">
@@ -193,6 +194,41 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="col" id="cartaoCol">
+        <div class="formTop">
+            <div class="expandir">
+                <h1>Cartões salvos</h1>
+                <img class="imgDow" id="cartaoOn" src="icons/sinal-de-seta-para-baixo-para-navegar.svg" alt="">
+                <img class="imgUp" id="cartaoOff"  src="icons/seta-para-cima.svg" alt="">
+            </div>
+        </div>
+
+        <form method="POST" onsubmit="return formulario_cartao();">
+            <div class="formDeFault" id="formCartao">
+                <label class="labelDefault">
+                    <span class="nomes display">Nome</span>
+                    <input id="namecard" type="text" class="inputDefault margin total"  placeholder="EX:JOAO A DOS ANJOS.com" onkeypress="return soletras(event)">
+                </label>
+                <label class="labelDefault">
+                    <span class="nomes display nrCartao">Numero do cartão</span>
+                    <input id="numbercard" type="text" class="inputDefault margin total" maxlength="16" placeholder="EX: 4444 4444 4444 4444" OnKeyPress="mascara('', this)">
+                </label>
+                <label class="labelDefault uf">
+                    <span class="nomes display">CVV</span>
+                    <input id="cvv" type="text" placeholder="EX: 123" maxlength="3" OnKeyPress="mascara('', this)" class="inputDefault margin uf">
+                </label>
+                <label class="labelDefault complemento">
+                    <span class="nomes display">Validade(MM/AA)</span>
+                    <input id="ano" type="text" maxlength="5" placeholder="01/10" class="inputDefault margin complemento" OnKeyPress="mascara('##/##', this)">
+                </label>
+                <label class="labelDefault btn">
+                    <input type="submit" class="buttonDefault" value="Adicionar novo cartão" >
+                </label>
+            </div>
+        </form>
     </div>
     
     <script src="assets/cadastro.js"></script>

@@ -4,7 +4,7 @@ body{
 
 .col{
     width: 50%;
-    margin: 10px auto;
+    margin: 5px auto;
     background: #eeeeee;
     height: auto;
     transition: all 1s;
@@ -14,9 +14,6 @@ body{
 }
 .col.close{
     transition: all 1s;
-    width: 50%;
-    margin: auto;
-    background: #eeeeee;
     border-bottom: none;
 }
 .col.close .imgUp{
@@ -78,6 +75,9 @@ body{
 }
 .nomes.novaSenha{
     width: 20%;
+}
+.nomes.nrCartao{
+    width: 50%;
 }
 .inputDefault{
     margin-left: 27px;
