@@ -1,0 +1,14 @@
+cores principais:
+
+azul: #3F46FF
+branco: #F9F9F9
+vermelhor: #FF3636
+verde: #37FF37
+laranja: #FF9736
+azul escuro: #000581
+cinza escuro: #808080
+
+amarelo dos correios: #FFD626
+azul dos correios: #004E73
+
+onde/cores

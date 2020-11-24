@@ -1,0 +1,228 @@
+#content {
+    display: block;
+    margin-top: 5rem;
+
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#searchByName{
+    display: flex;
+    align-items: center;
+    height: 3.4rem;
+    width: 28rem;
+    
+    margin: 1.8rem auto 0 auto;
+    border: 1px solid #B8B8B8;
+    border-radius: .6rem;
+}
+
+#searchByName input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding-left: .6rem;
+}
+
+#searchByName button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    margin-right: .6rem;
+}
+
+#productsArea {
+    display:flex; 
+    align-self: center;
+
+    max-width: 100%;
+    margin: 1.8rem 0;
+    padding: 3rem 0 0 0;
+
+    background: rgb(249, 249, 249, 0.6);
+    border: 1px solid #B8B8B8;
+    border-radius: .6rem;
+}
+
+#filterMenuButton {
+    visibility: visible;
+    align-items: center;
+    
+    max-height: 5.8rem;
+    padding: 1.2rem 0.8rem; 
+
+    background: #3F46FF;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
+
+#buttonBackIcon { display: none; }
+
+#productsFilter.hideFilter{
+    max-width: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+
+#productsFilter {
+    display:flex;
+    flex-direction: column;
+
+    max-width: 58rem;
+    padding: 0 1.8rem 0 1.8rem;
+    
+    background: #f9f9f9;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #B8B8B8;
+
+    overflow: visible;
+    transition: max-width 0.8s;
+}
+
+#productsFilter > div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #B8B8B8;
+    border-radius: .6rem;
+}
+
+#productsFilter > div input{
+    width: 100%;
+    border: none;
+    padding-left: .6rem;
+}
+
+#productsFilter > div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    margin-right: .6rem;
+}
+
+#productsFilter button {
+    height: 3.2rem;
+
+    color: #222;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 2px solid transparent;
+    border-radius: 0.6rem;
+    transition: background 0.5s;
+}
+
+#filterSubmitButton, #resetButton { margin-bottom: 2.2rem; }
+
+#filterSubmitButton { background: #40FF40; }
+
+#resetButton { background:#FF3F3F; }
+
+#filterSubmitButton:hover { background: rgba(55, 255, 55, 0.6); }
+
+#resetButton:hover { background: rgba(255, 63, 63, 0.8); }
+
+
+#productsFilter h2 + .filterOption { margin-top: 2.2rem; }
+
+#productsFilter h2, label { color: #222; }
+
+#productsFilter h2 { font-size: 3rem; }
+
+#productsFilter label {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.filterOption {
+    display: flex;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+
+.filterOption input {
+    margin: 0 0.8rem 0 0.8rem;
+    transform: scale(1.4); 
+}
+
+.filterlineDivision {
+    width: 100%;
+    height: 1px;
+    margin: 1.8rem 0 1.8rem;
+    text-align: center;
+    background: #B8B8B8; 
+}
+
+#productsList { 
+    display: inline;
+    width: 100%; 
+}
+
+#productsList > h2 { 
+    /* display: block; */
+    text-align: center;
+    font-size: 4rem; 
+    margin-bottom: 2.2rem;
+}
+
+@media only screen and (min-width: 1080px) {
+    #content {
+        background-image: url("../../assets/images/backgroundImages/discount.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    #content {
+        background-image: url("../../assets/images/backgroundImages/discount.svg");
+        background-size: contain;
+    }
+
+    #productsArea {
+        flex-direction: row;
+        max-width: 100%;
+        margin: 1.8rem 12rem;
+        padding: 3rem;
+        border: none;
+        box-shadow: 0 0 1.2rem #B8B8B8;
+    }
+
+    #filterMenuButton { visibility: hidden; }
+
+    #productsFilter.hideFilter{
+        max-width: 58rem;
+        padding: 0 3.6rem 0 0;
+        overflow: auto;
+    } 
+
+    #productsFilter {
+        position: relative;
+        flex-direction: column;
+        padding: 0 3.6rem 0 0;
+        background: transparent;
+    }
+
+    #productsFilter h2 { font-size: 3.2rem; }
+
+    #productsFilter label {
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+
+    .filterOption {
+        margin-top: .6rem;
+    }
+
+    .filterOption input {
+        margin: 0 0.4rem 0 0.8rem;
+        transform: scale(1); 
+    }
+
+    #productsFilter h2 { font-size: 3rem; }
+}

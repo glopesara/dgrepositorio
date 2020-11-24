@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/styles/cardProduct.css">
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header id="pageHeader">
+            <!-- ícone visível somente no mobile -->
+            <button id="menuSwitch" onclick="openMenu()">
+                <img src="../../assets/icons/list.svg" alt="Ícone Menu">
+            </button>      
+            
+            <a href="../homePage/index.html">
+                <img src="../../assets/images/logo1.png" alt="Droga ABC">
+            </a>
+
+            <div id="sideNavigationMenu" class="hide">
+                <nav>
+                    <a id="loginAnchor" href="../login/index.html">
+                        <img src="../../assets/icons/log-in.svg" alt="Ícone Login">
+                        <span>Entrar</span>
+                    </a>
+                    
+                    <a href="../promotions/index.html">
+                        <img src="../../assets/icons/percent.svg" alt="Ícone Porcentagem">
+                        <span>Promoções</span>
+                    </a>
+                
+                    <a href="../perfil/index.html">
+                        <img src="../../assets/icons/user.svg" alt="Ícone Usuário">
+                        <span>Área do Cliente</span>
+                    </a>
+                
+                    <a href="../contact/index.html">
+                        <img src="../../assets/icons/phone.svg" alt="Ícone Contato">
+                        <span>Contato</span>
+                    </a>
+                
+                    <a href="../aboutUs/index.html">
+                        <img src="../../assets/icons/file-text.svg" alt="Ícone Sobre Nós">
+                        <span>Sobre Nós</span>
+                    </a>
+                
+                    <a id="signUpAnchor" href="../signUp/index.html">
+                        <img src="../../assets/icons/user-plus.svg" alt="Ícone Cadastrar">
+                        <span>Cadastre-se aqui</span>
+                    </a>       
+                    
+                    <img src="../../assets/images/logoWithoutText.png" alt="Logo">
+                    
+                </nav>
+            </div>
+            <a href="../../pages/cart/index.html" >
+                <img src="../../assets/icons/shopping-cart.svg" alt="Ícone Carrinho">
+            </a>
+        </header>
+
+        <div id="content">
+
+            <div id="imgContainer">
+                <img id="img1" src="../../assets/images/slide1.jpg" alt="Entrega">
+                <img id="img2" src="../../assets/images/slide2.jpg" alt="Conforto de casa"> 
+            </div>
+            
+            <form method="GET" id="searchByName" name="searchByName">
+                <input type="search" name="name" id="inputSearch" required>
+                <button>
+                    <img src="../../assets/icons/search.svg" alt="Lupa">
+                </button>
+            </form>
+
+            <main id="productsArea">
+
+                <form id="productsFilter" class="hideFilter" method="GET">
+                    
+                    <button id="filterSubmitButton" type="submit">Filtrar</button>
+                    <button id="resetButton" type="reset">Limpar</button>
+                    <section>
+                        <h2>Categoria</h2>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="medicamentos"> 
+                            <label for="medications">Medicamentos</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="genericos"> 
+                            <label for="generics">Genéricos</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="saude"> 
+                            <label for="saude">Saúde</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="antigripal"> 
+                            <label for="antigripal">Antigripal</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="antialergico"> 
+                            <label for="antialergico">Antialérgico</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="descartavel"> 
+                            <label for="calmantes">Descartáveis</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="dorecontusao"> 
+                            <label for="dorecontusao">Dor e Contusão</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="category" value="vitamina"> 
+                            <label for="VitaminaC">Vitamina</label>
+                        </div>
+
+                    </section>
+
+                    <hr class="filterlineDivision">
+
+                    <section>
+                        <h2>Marcas</h2>
+                        <div class="filterOption">
+                            <input type="checkbox" name="brand" id="benegripe" value="benegripe"> 
+                            <label for="benegripe">Benegripe</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" name="brand" id="climed" value="climed"> 
+                            <label for="climed">Climed </label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" id="rexona" value="naldecon"> 
+                            <label for="rexona">Naldecon</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" id="axe" value="axe"> 
+                            <label for="axe">Axe</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" id="ems" value="ems"> 
+                            <label for="ems">Ems</label>
+                        </div>
+                        <div class="filterOption">
+                            <input type="checkbox" id="cifarma" value="cifarma"> 
+                            <label for="cifarma">Cifarma</label>
+                        </div>
+
+                    </section>
+
+                    <hr class="filterlineDivision">
+
+                </form>
+                <button id="filterMenuButton" type="button" onclick="openFilter();">
+                    <img id="buttonFilterIcon" src="../../assets/icons/filter.svg" alt="Filtro">
+                    <img id="buttonBackIcon" src="../../assets/icons/chevron-left.svg" alt="Fechar">
+                </button>
+
+                <div id="productsList" >
+                    <!-- Adicionar os cards aqui 
+                    dinamicamente via javascript -->
+                </div>
+            </main>  
+        </div>
+        <footer>
+            <p>Desenvolvido pelos alunos do curso de <br> Ciência da Computação Anhanguera 2020</p>
+        </footer>
+    </div>
+
+    <script>
+        const pageParams = window.location.search;
+
+        let parsedParams = pageParams
+            ? pageParams.substring(1).split("&")
+            : pageParams
+
+        window.onload = () => {
+            findProducts(parsedParams);
+        }
+    </script>
+    <script src="../../utils/renderProductcard.js"></script>
+    <script src="../../utils/products.js"></script>
+    <script src="../../utils/filterProductController.js"></script>
+    <script src="../../utils/headerMenuController.js"></script>
+</body>
+</html>
