@@ -1,0 +1,102 @@
+#pageHeader{
+    background: transparent;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pageHeader img { height: 7rem; }
+
+#container {
+    display: flex;
+    flex: 1;
+    background-image: url("../../assets/images/backgroundImages/login.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulary { 
+    margin: auto 0;
+    width: 90%;
+    padding: 3.2rem; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1.2rem var(--color-boxShadow);
+    border-radius: 0.6rem;
+    background: var(--color-background-white-with-opacity);
+}
+
+#formulary h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3.6rem;
+}
+
+#formulary label{
+    cursor: text;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-text);
+}
+
+#formulary input{
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    padding: .6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.6rem;
+    background: var(--color-input-background);
+
+    transition: border 0.6s;
+}
+
+#formulary input:focus {
+    border: 1px solid var(--color-principal-blue);
+    background: var(--color-background-white);
+}
+
+#formulary button {
+    height: 3.2rem;
+
+    border: none;
+    border-radius: 0.6rem;
+
+    color: var(--color-text-white);
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    background: var(--color-principal-red);
+    transition: color 0.4s, background 0.6s;
+}
+
+#formulary button:hover { 
+    color: var(--color-text);
+    background: var(--color-principal-red-with-opacity); 
+}
+
+#formulary div {
+    margin-top: 1.2rem;;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 720px) {
+    #formulary { 
+        width: 36rem;
+    }
+    #formulary div {
+        margin-top: 1.2rem;;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    #formulary h2 {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 3.6rem;
+    }
+}

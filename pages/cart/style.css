@@ -1,0 +1,139 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 5.0rem;
+    align-items: center;
+    background-image: url("../../assets/images/backgroundImages/shoppingCart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+
+#cart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+#cart > h1 {
+    margin: 1.2rem;
+    text-align: center;
+    color: var(--color-title-blue);
+}
+
+#productCart {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 1.2rem var(--color-boxShadow);
+    border-radius: .6rem;
+    overflow: hidden;
+    background: var(--color-background-white-with-opacity);
+}
+
+#productCart + #productCart {
+    margin-top: 1rem;
+}
+
+#productCart img {
+    background: var(--color-background-white);
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+}
+
+#productCartInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.2rem;
+}
+
+#productCartInfo > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#productCartInfo > div button {
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+#productCartInfo div p {
+    display: flex;
+    align-items: center;
+}
+
+#productCartPrice {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-title-blue);
+}
+
+#orderPayment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    margin-top: auto;
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    border-color: var(--color-principal-blue);
+    border-radius: 1.2rem 1.2rem 0 0;
+    background: var(--color-background-white-with-opacity);
+}
+
+#orderPayment p {
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#orderPayment button {
+    height: 3.2rem;
+    margin-top: 1.2rem;
+    padding: 0 1rem;
+
+    border: none;
+    border-radius: 0.6rem;
+
+    color: var(--color-background-white);
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    background: var(--color-principal-red);
+    transition: color 0.4s, background 0.6s;
+}
+
+#orderPayment button:hover { 
+    color: var(--color-text);
+    background: var(--color-principal-red-with-opacity); 
+}
+
+@media only screen and (min-width: 720px){
+    #cart {
+        width: 72rem;
+        
+    }
+
+    #orderPayment {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #orderPayment p {
+        margin-right: 1rem;
+    }
+
+    #orderPayment button {
+        margin: 0;
+    }
+}

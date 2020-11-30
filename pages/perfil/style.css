@@ -1,0 +1,263 @@
+#content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#main {
+    height: auto;
+    transition: max-height 0.8s;
+}
+
+.warning {
+    margin: 0 1.8rem .8rem 1.8rem;
+}
+
+#openedFormArrow { transform: rotate(180deg); }
+
+.dropDownButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+
+    border: none;
+    box-shadow: 0 0 1.2rem var(--color-boxShadow);
+    border-radius: .2rem;
+
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.dropDownButton img {
+    height: 3.2rem;
+    margin-left: 1.8rem;
+    transition: transform 0.4s;
+}
+
+#main .hide{
+    max-height: 0px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.formulary {
+    max-height: auto;
+    width: 100%;
+    padding: 3.2rem; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1.2rem var(--color-boxShadow);
+
+    transition: max-height 0.8s;
+    background: var(--color-background-white-with-opacity);
+
+    overflow: hidden;
+}
+
+.formulary h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3.6rem;
+}
+
+.formulary label{
+    cursor: text;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-text);
+}
+
+.formulary input{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: .6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.6rem;
+    background: var(--color-input-background);
+
+    transition: border 0.6s;
+}
+
+.formulary input:focus {
+    border: 1px solid var(--color-principal-blue);
+    background: var(--color-background-white);
+}
+
+.formulary button {
+    height: 3.2rem;
+
+    border: none;
+    border-radius: 0.6rem;
+
+    color: var(--color-text-white);
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    background: var(--color-principal-red);
+    transition: color 0.4s, background 0.6s;
+}
+
+.formulary button:hover {
+    color: var(--color-text);
+    background: var(--color-principal-red-with-opacity); 
+}
+
+.inLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inLine button {
+    height: 100%;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.inColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.cepVerificationButtonInlineContainer{
+    width: 50%;
+    margin-left: 10%;
+    border-radius: 1.2rem;
+}
+
+#cepVerificationButton{
+    background: var(--color-yellow-correios);
+    color: var(--color-blue-correios);
+    box-shadow: 0 0 0 0 var(--color-yellow-correios-with-opacity);
+    border-radius: 1.2rem;
+    transition: background 0.4s, color 0.4s;
+}
+
+#cepVerificationButton:hover{
+    background: var(--color-yellow-correios-with-opacity);
+}
+
+#cepVerificationButton:focus{
+    animation: pulseYellow 1.2s;
+}
+
+form[name="address"] .successWarning {
+    color: var(--color-green-successful);
+}
+
+form[name="address"] .warning {
+    margin: -0.8rem 0 1rem 0.2rem;
+    font-size: 1.8rem !important;
+    text-align: start;
+}
+
+@keyframes pulseYellow {
+    to {
+        box-shadow: 0 0 0 20px rgba(255, 214, 38,0);
+    }
+}
+
+.largeInlineContainer {
+    width: 75%;
+}
+
+.smallInlineIContainer {
+    width: 15%;
+}
+
+.submitButtonInlineContainer{
+    width: 35%;
+}
+
+#num, #uf, #cvv, #expirationDate {
+    max-width: 6.6rem;
+    text-align: center;
+}
+
+#myOrders {
+    padding: 3.2rem; 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0 0 1.2rem var(--color-boxShadow);
+    background: var(--color-background-white-with-opacity);
+    overflow: hidden;
+}
+
+.orders {
+    display: flex;
+    width: 100%;
+    height: 3.6rem;
+    border-radius: .6rem;
+    margin-bottom: 1.8rem;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    overflow: hidden;
+}
+
+.orderNumber, .orderDate, .orderStatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+.orderNumber{
+    color: var(--color-text-white);
+    background: var(--color-principal-blue);
+}
+
+.orderNumber img {
+    margin-right: .6rem;
+}
+
+.orderDate {
+    color: var(--color-background-white);
+    background: var(--color-background-grey);
+}
+
+.orderStatus { color: #222; }
+
+.concluded { background: var(--color-green-successful); }
+
+.pending { background: #FF9736; }
+
+.canceled { background: var(--color-principal-red); }
+
+@media only screen and (min-width: 720px) {
+    #main {
+        width: 50rem;
+        margin: 1.8rem 0 3.2rem 0;
+    }
+    
+    .dropDownButton {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .dropDownButton img {
+        height: 3.2rem;
+        margin-left: 1.8rem;
+        transition: transform 0.4s;
+    }
+    
+    .formulary {
+        margin: auto 0;
+    
+        width: 100%;
+        padding: 3.2rem; 
+    }
+
+
+    .warning {
+        margin: 0 3.2rem .8rem 3.2rem;
+    }
+}
